@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tic-tag-toe-online-with-firebase/static/css/main.11d0f004.css",
+    "main.js": "/tic-tag-toe-online-with-firebase/static/js/main.4299f342.js",
+    "index.html": "/tic-tag-toe-online-with-firebase/index.html",
+    "main.11d0f004.css.map": "/tic-tag-toe-online-with-firebase/static/css/main.11d0f004.css.map",
+    "main.4299f342.js.map": "/tic-tag-toe-online-with-firebase/static/js/main.4299f342.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11d0f004.css",
+    "static/js/main.4299f342.js"
+  ]
+}
