@@ -20,8 +20,7 @@ export default function SetName({setUserName , close}) {
             return
         }
         await localStorage.setItem('name',name)
-        await setUserName(name)
-        await close()
+        window.location.reload()
     }
 
     return (

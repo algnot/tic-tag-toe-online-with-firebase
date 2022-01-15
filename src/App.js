@@ -10,17 +10,20 @@ function App() {
   const parsed = queryString.parse(window.location.search); 
   
   const [userName, setuserName] = useState('')
+  const [userKey, setuserKey] = useState('')
   const [page, setPage] = useState('')
 
   useEffect(() => {
-    const userKey = localStorage.getItem('key')
-    const userName = localStorage.getItem('name')
+    var userKey = localStorage.getItem('key')
+    var userName = localStorage.getItem('name')
     if(!userKey) {
       const generateKey = Math.floor(Math.random() * 999999999 + 100000000);
       localStorage.setItem('key' , generateKey)
       userKey = generateKey
+      setuserKey(generateKey)
     }
-    setuserName(userName)
+    setuserName(userName ? userName : '')
+    setuserKey(userKey)
     setPage(parsed.page ? parsed.page : 'home')
   }, [])
 
